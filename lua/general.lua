@@ -1,5 +1,8 @@
 local set = vim.opt
 
+-- Use system clipboard
+set.clipboard = "unnamedplus"
+
 -- Indentation Settings
 set.autoindent = true
 
