@@ -20,6 +20,9 @@ local autocmds = {
         { "TermOpen", "*", "startinsert" };
         { "TermOpen", "*", "setlocal nonumber norelativenumber" };
     };
+    sage = {
+        { "BufRead", "*.sage,*.spyx,*.pyx", "set filetype=python" };
+    };
 }
 
 nvim_create_augroups(autocmds)
