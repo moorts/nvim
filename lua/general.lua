@@ -19,10 +19,3 @@ set.showmode = false
 
 -- Color scheme
 set.termguicolors = true
-
--- require('ayu').setup({
---     mirage = false,
---     overrides = {},
--- })
--- require('ayu').colorscheme()
-

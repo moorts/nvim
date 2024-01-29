@@ -1,6 +1,7 @@
 -- Keybinding Configuration
 
 vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 local keyset = vim.keymap.set
 
@@ -8,10 +9,10 @@ local keyset = vim.keymap.set
 keyset('n', '<leader>v', '<cmd>vsplit<cr>')
 keyset('n', '<leader>h', '<cmd>split<cr>')
 
-keyset('n', '<C-h>', '<C-w>h')
-keyset('n', '<C-j>', '<C-w>j')
-keyset('n', '<C-k>', '<C-w>k')
-keyset('n', '<C-l>', '<C-w>l')
+-- keyset('n', '<C-h>', '<C-w>h')
+-- keyset('n', '<C-j>', '<C-w>j')
+-- keyset('n', '<C-k>', '<C-w>k')
+-- keyset('n', '<C-l>', '<C-w>l')
 
 
 -- Buffer Navigation
