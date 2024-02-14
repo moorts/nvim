@@ -23,6 +23,9 @@ local autocmds = {
     sage = {
         { "BufRead", "*.sage,*.spyx,*.pyx", "set filetype=python" };
     };
+    tabs = {
+        { "FileType", "nix", "setlocal tabstop=2 shiftwidth=2 expandtab" };
+    };
 }
 
 nvim_create_augroups(autocmds)
