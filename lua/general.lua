@@ -14,6 +14,9 @@ set.tabstop = 4
 set.number = true
 set.relativenumber = true
 
+-- Line Length Indicator
+set.colorcolumn = "100"
+
 -- Remove gap
 set.showmode = false
 

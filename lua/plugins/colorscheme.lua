@@ -1,9 +1,32 @@
 return {
+    "tjdevries/colorbuddy.nvim",
+    dependencies = {
+        "jesseleite/nvim-noirbuddy"
+    },
+    config = function ()
+        vim.highlight.priorities.semantic_tokens = 95
+        vim.cmd.colorscheme("moorts")
+    end
+}
+--[[
+return {
+  'jesseleite/nvim-noirbuddy',
+  dependencies = {
+    { 'tjdevries/colorbuddy.nvim' }
+  },
+  lazy = false,
+  priority = 1000,
+  opts = {
+    -- All of your `setup(opts)` will go here
+  },
+}
+return {
     "Rigellute/shades-of-purple.vim",
     config = function ()
         vim.cmd("colorscheme shades_of_purple")
     end
 }
+]]
 --[[
 return {
     "agude/vim-eldar",
