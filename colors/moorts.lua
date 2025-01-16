@@ -3,8 +3,6 @@ local noirbuddy = require("noirbuddy.colors").all()
 local colorbuddy = require("colorbuddy")
 colorbuddy.colorscheme("moorts")
 
-
-
 -- And then modify as you like
 local Color = colorbuddy.Color
 local colors = colorbuddy.colors
@@ -20,6 +18,7 @@ Color.new('foreground',  '#5ed378')
 Color.new('red',         '#cc6666')
 Color.new('green',       '#99cc99')
 Color.new('bold_red',    '#ff0000')
+Color.new('line_nr',     '#eeeeee')
 
 Color.new('pink',        '#ff8bff')
 
@@ -33,6 +32,7 @@ Color.new('statements',  '#b7b7f7')
 Color.new('special_key', '#3b205d')
 Color.new('title',       '#af4f4b')
 Color.new('non_text',    '#8b8bcd')
+Color.new('bars',        '#3e3e75')
 
 Color.new('noir_0',      '#ffffff')
 Color.new('noir_1',      '#f5f5f5')
@@ -51,6 +51,7 @@ Group.new("Foreground", colors.foreground)
 -- Doc Comments should be bright red!
 Group.new("@comment.documentation", colors.comments)
 Group.new("SpecialComment", colors.comments)
+Group.new("Comment", colors.comments)
 
 -- Group.new("Keyword", colors.pink, colors.background, styles.bold)
 Group.new("Identifier", colors.idents)
@@ -75,9 +76,9 @@ Group.new("Character", colors.literals)
 Group.new("Normal", colors.foreground, colors.background)
 Group.new("NonText", colors.non_text, colors.background, styles.bold)
 Group.new("SignColumn", colors.noir_5, colors.background)
-Group.new("LineNr", colors.noir_7, colors.background)
-Group.new("LineNrAbove", colors.noir_7, colors.background)
-Group.new("LineNrBelow", colors.noir_7, colors.background)
+Group.new("LineNr", colors.line_nr, colors.bars)
+Group.new("LineNrAbove", colors.non_text, colors.bars)
+Group.new("LineNrBelow", colors.non_text, colors.bars)
 
 Group.new("Include", colors.foreground)
 
